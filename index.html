@@ -1,0 +1,29 @@
+<!DOCTYPE HTML>
+<html lang="en-US">
+    <head>
+        <meta charset="UTF-8">
+        <script type="text/javascript">
+          function getParameterByName(name) {
+            name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
+            var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
+              results = regex.exec(location.search);
+            return results === null ? "" : decodeURIComponent(results[1].replace(/\+/g, " "));
+
+          }
+
+          var redirectUrl = getParameterByName('url');
+
+          if(!redirectUrl) {
+            window.location.href = 'https://reimertz.github.io/gistploy/malformed.html?url="' + encodeURI(window.location.href) +'"';
+          }
+          else {
+            window.location.href = redirectUrl;
+          }
+
+
+
+        </script>
+        <title>gistploy redirection page</title>
+    </head>
+    <body></body>
+</html>

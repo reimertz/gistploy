@@ -1,0 +1,24 @@
+<!DOCTYPE HTML>
+<html lang="en-US">
+    <head>
+        <meta charset="UTF-8">
+        <script type="text/javascript">
+          function getParameterByName(name) {
+            name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
+            var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
+              results = regex.exec(location.search);
+            return results === null ? "" : decodeURIComponent(results[1].replace(/\+/g, " "));
+
+          }
+
+          var malformedUrl = getParameterByName('url');
+
+
+        </script>
+        <title>gistploy - malformed url</title>
+    </head>
+    <body>
+      <h1>gistploy url shortener</h1>
+      <h3>Malformed URL: <script type="text/javascript">document.write(malformedUrl)</script> </h3>
+    </body>
+</html>
