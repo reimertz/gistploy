@@ -1,6 +1,6 @@
 {
   "name": "gistploy",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "A CLI tool to anonymously and freely deploy your website",
   "repository": {
     "type": "git",
