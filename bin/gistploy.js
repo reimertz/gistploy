@@ -2,12 +2,12 @@
 "use strict";
 
 var args = require('minimist')(process.argv.slice(2)),
-    commandHandler = require('../lib/commandhandler'),
-    argumentHandler = require('../lib/argumenthandler');
+    commandHandler = require('../lib/commandHandler'),
+    argumentHandler = require('../lib/argumentHandler');
 
 
-//Check for --help --list
+//Check for --help
 argumentHandler.check(args);
 
-//execute letwork command
-commandHandler.letswork(args);
+//execute gistploy command
+commandHandler.gistploy(args);
