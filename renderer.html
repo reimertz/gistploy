@@ -6,5 +6,9 @@
     })
     .then(body => {
       document.body.innerHTML = body
+      
+      for(var i = 1; i <= document.scripts.length; i++) {
+        eval(document.scripts[i].innerHTML)      
+      }
     })
 </script>
