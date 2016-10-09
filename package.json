@@ -22,6 +22,7 @@
   "dependencies": {
     "bluebird": "^2.6.0",
     "chalk": "^0.5.1",
+    "gulp": "^3.9.1",
     "gulp-inline": "0.0.11",
     "gulp-intercept": "^0.1.0",
     "gulp-minify-css": "^1.2.0",
